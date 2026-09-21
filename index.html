@@ -2,12 +2,84 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>smoke-air</title>
+    <meta name="theme-color" content="#111211" />
+    <meta name="color-scheme" content="dark light" />
+
+    <title>Smoke Air · Make a little space</title>
+    <meta name="description" content="Smoke Air is a fictional digital ritual for atmosphere, reflection, and private mood journaling." />
+    <meta name="keywords" content="digital ritual, mood journaling, atmosphere, reflection, fictional simulator, smoke air" />
+    <meta name="author" content="Smoke Air" />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://smokeair.app/" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <!-- Performance: preload critical image -->
+    <link rel="preload" as="image" href="/src/assets/hero.png" fetchpriority="high" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Smoke Air" />
+    <meta property="og:url" content="https://smokeair.app/" />
+    <meta property="og:title" content="Smoke Air · Make a little space" />
+    <meta property="og:description" content="A fictional interactive simulator for quiet moments and private mood journaling." />
+    <meta property="og:image" content="https://smokeair.app/og-cover.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Smoke Air — a quiet digital ritual" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="zh_CN" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Smoke Air · Make a little space" />
+    <meta name="twitter:description" content="A fictional interactive simulator for quiet moments and private mood journaling." />
+    <meta name="twitter:image" content="https://smokeair.app/og-cover.png" />
+    <meta name="twitter:image:alt" content="Smoke Air — a quiet digital ritual" />
+
+    <!-- hreflang -->
+    <link rel="alternate" hreflang="en" href="https://smokeair.app/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://smokeair.app/?lang=zh-CN" />
+    <link rel="alternate" hreflang="x-default" href="https://smokeair.app/" />
+
+    <!-- Structured data: WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Smoke Air",
+      "alternateName": "SmokeAir",
+      "description": "A fictional digital ritual for atmosphere, reflection, and private mood journaling.",
+      "url": "https://smokeair.app/",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "Web",
+      "inLanguage": ["en", "zh-CN"],
+      "isAccessibleForFree": true,
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "Smoke Air",
+        "url": "https://smokeair.app/"
+      }
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <p style="padding:2rem;font-family:system-ui;color:#111;background:#fafafa;">
+        Smoke Air needs JavaScript to run. The application is a single-page interactive ritual
+        built with React 19 and Vite. Please enable JavaScript and reload.
+      </p>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /simulate
+Disallow: /create
+Disallow: /history
+Disallow: /settings
+
+Sitemap: https://smokeair.app/sitemap.xml
